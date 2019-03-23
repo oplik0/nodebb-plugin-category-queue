@@ -1,6 +1,6 @@
 {
-	"id": "nodebb-plugin-quickstart",
-	"url": "https://github.com/NodeBB/nodebb-plugin-quickstart",
+	"id": "nodebb-plugin-category-queue",
+	"url": "https://github.com/NodeBB/nodebb-plugin-category-queue",
 	"library": "./library.js",
 	"hooks": [
 		{

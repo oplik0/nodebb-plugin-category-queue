@@ -1,16 +1,16 @@
 {
-  "name": "nodebb-plugin-quickstart",
+  "name": "nodebb-plugin-category-queue",
   "version": "0.2.3",
   "description": "A starter kit for quickly creating NodeBB plugins",
   "main": "library.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-plugin-quickstart"
+    "url": "https://github.com/psychobunny/nodebb-plugin-category-queue"
   },
   "keywords": [
     "nodebb",
     "plugin",
-    "quickstart",
+    "category-queue",
     "shell"
   ],
   "husky": {
@@ -31,7 +31,7 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/psychobunny/nodebb-plugin-quickstart/issues"
+    "url": "https://github.com/psychobunny/nodebb-plugin-category-queue/issues"
   },
   "readmeFilename": "README.md",
   "nbbpm": {

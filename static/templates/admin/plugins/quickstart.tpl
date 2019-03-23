@@ -1,10 +1,10 @@
-<form role="form" class="quickstart-settings">
+<form role="form" class="category-queue-settings">
 	<div class="row">
 		<div class="col-sm-2 col-xs-12 settings-header">General</div>
 		<div class="col-sm-10 col-xs-12">
 			<p class="lead">
 				Adjust these settings. You can then retrieve these settings in code via:
-				<code>meta.settings.get('quickstart', function(err, settings) {...});</code>
+				<code>meta.settings.get('category-queue', function(err, settings) {...});</code>
 			</p>
 			<div class="form-group">
 				<label for="setting-1">Setting 1</label>

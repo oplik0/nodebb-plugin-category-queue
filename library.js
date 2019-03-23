@@ -12,17 +12,17 @@ plugin.init = function (params, callback) {
 	// We create two routes for every view. One API call, and the actual route itself.
 	// Just add the buildHeader middleware to your route and NodeBB will take care of everything for you.
 
-	router.get('/admin/plugins/quickstart', hostMiddleware.admin.buildHeader, controllers.renderAdminPage);
-	router.get('/api/admin/plugins/quickstart', controllers.renderAdminPage);
+	router.get('/admin/plugins/category-queue', hostMiddleware.admin.buildHeader, controllers.renderAdminPage);
+	router.get('/api/admin/plugins/category-queue', controllers.renderAdminPage);
 
 	callback();
 };
 
 plugin.addAdminNavigation = function (header, callback) {
 	header.plugins.push({
-		route: '/plugins/quickstart',
+		route: '/plugins/category-queue',
 		icon: 'fa-tint',
-		name: 'Quickstart',
+		name: 'category-queue',
 	});
 
 	callback(null, header);

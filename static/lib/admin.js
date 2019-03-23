@@ -2,17 +2,17 @@
 
 /* globals $, app, socket, define */
 
-define('admin/plugins/quickstart', ['settings'], function (Settings) {
+define('admin/plugins/category-queue', ['settings'], function (Settings) {
 	var ACP = {};
 
 	ACP.init = function () {
-		Settings.load('quickstart', $('.quickstart-settings'));
+		Settings.load('category-queue', $('.category-queue-settings'));
 
 		$('#save').on('click', function () {
-			Settings.save('quickstart', $('.quickstart-settings'), function () {
+			Settings.save('category-queue', $('.category-queue-settings'), function () {
 				app.alert({
 					type: 'success',
-					alert_id: 'quickstart-saved',
+					alert_id: 'category-queue-saved',
 					title: 'Settings Saved',
 					message: 'Please reload your NodeBB to apply these settings',
 					clickfn: function () {
