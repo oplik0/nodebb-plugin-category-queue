@@ -30,8 +30,6 @@ plugin.addAdminNavigation = function (header, callback) {
 };
 
 plugin.postQueue = async (data, callback) {
-	console.log(data.data.cid);
-
 	if (data.data.cid in cids) {
 		data.shouldQueue = True;
 	};
