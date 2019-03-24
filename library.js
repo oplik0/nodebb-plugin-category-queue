@@ -4,7 +4,7 @@ const controllers = require('./lib/controllers');
 
 const plugin = {};
 
-var cids = [0, 1, 2, 3, 4];
+var cids = ['0', '1', '2', '3', '4'];
 plugin.init = function (params, callback) {
 	const router = params.router;
 	const hostMiddleware = params.middleware;
@@ -35,7 +35,7 @@ plugin.postQueue = function (queueData, callback) {
 	if (queryData.data.cid in cids) {
 		queueData.shouldQueue = True;
 	};
-	callback(null, queueData);
+	callback(err, queueData);
 };
 
 module.exports = plugin;
