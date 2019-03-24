@@ -29,7 +29,7 @@ plugin.addAdminNavigation = function (header, callback) {
 	callback(null, header);
 };
 
-plugin.postQueue = function (data, callback) {
+plugin.postQueue = async (data, callback) {
 	console.log(data.data.cid);
 
 	if (data.data.cid in cids) {
