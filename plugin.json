@@ -10,9 +10,6 @@
 			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
 		},
 		{
-			"hook": "action:post.save", "method": "savePost"
-		},
-		{
 			"hook":"filter:post.shouldQueue", "method": "postQueue"
 		}
 
