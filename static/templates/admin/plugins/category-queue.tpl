@@ -7,12 +7,15 @@
 				<code>meta.settings.get('category-queue', function(err, settings) {...});</code>
 			</p>
 			<div class="form-group">
-				<label for="setting-1">Setting 1</label>
-				<input type="text" id="setting-1" name="setting-1" title="Setting 1" class="form-control" placeholder="Setting 1">
-			</div>
-			<div class="form-group">
-				<label for="setting-2">Setting 2</label>
-				<input type="text" id="setting-2" name="setting-2" title="Setting 2" class="form-control" placeholder="Setting 2">
+				<form role="form" class="category-queue-topics">
+					<div class="form-group col-sm-4 col-xs-6">
+						<label for="{../cid}">{../name}</label>
+						<select data-cid="{../cid}" id="{../cid}" name="{../cid}" title="{../name}" class="form-control">
+							<option value="False">Nie</option>
+							<option value="True">Tak</option>
+						</select>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>

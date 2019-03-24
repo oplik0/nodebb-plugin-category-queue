@@ -6,10 +6,10 @@ define('admin/plugins/category-queue', ['settings'], function (Settings) {
 	var ACP = {};
 
 	ACP.init = function () {
-		Settings.load('category-queue', $('.category-queue-settings'));
+		Settings.load('category-queue', $('.category-queue-topics'));
 
 		$('#save').on('click', function () {
-			Settings.save('category-queue', $('.category-queue-settings'), function () {
+			Settings.save('category-queue', $('.category-queue-topics'), function () {
 				app.alert({
 					type: 'success',
 					alert_id: 'category-queue-saved',
