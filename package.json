@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-category-queue",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "A plugin for making post queue category specific",
   "main": "library.js",
   "repository": {
