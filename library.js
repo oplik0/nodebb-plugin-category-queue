@@ -4,6 +4,7 @@ const controllers = require('./lib/controllers');
 
 const plugin = {};
 
+var cids = [1];
 plugin.init = function (params, callback) {
 	const router = params.router;
 	const hostMiddleware = params.middleware;
@@ -26,6 +27,13 @@ plugin.addAdminNavigation = function (header, callback) {
 	});
 
 	callback(null, header);
+};
+
+plugin.postQueue = function (shouldQueue, uid, data) {
+	if (data.cid in cids) {
+		shouldQueue=True;
+	};
+	callback(shouldQueue=shouldQueue, uid=uid, data=data);
 };
 
 module.exports = plugin;
