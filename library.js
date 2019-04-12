@@ -29,11 +29,11 @@ plugin.addAdminNavigation = function (header, callback) {
 	callback(null, header);
 };
 
-plugin.postQueue = function (data, callback) {
-	if (data.data.cid in cids) {
-		data.shouldQueue = 1;
+plugin.postQueue = function (postData, callback) {
+	if (postData.data.cid in cids) {
+		postData.shouldQueue = 1;
 	}
-	callback(null, data);
+	callback(null, postData);
 };
 
 module.exports = plugin;
