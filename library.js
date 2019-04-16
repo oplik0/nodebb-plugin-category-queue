@@ -3,8 +3,8 @@
 const controllers = require('./lib/controllers');
 
 const plugin = {};
-$.get(config.relative_path + '/canned-responses/defaults', function(data) {
-	defaults = data;
+$.get(config.relative_path + '/canned-responses/settings', function(data) {
+	settings = data;
 });
 var cids = ['0', '1', '2', '3', '4'];
 plugin.init = function (params, callback) {
