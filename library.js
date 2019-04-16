@@ -6,7 +6,7 @@ const plugin = {};
 $.get(config.relative_path + '/category-queue/settings', function(data) {
 	settings = data;
 });
-var cids = ['0', '1', '2', '3', '4'];
+var cids = ['23'];
 plugin.init = function (params, callback) {
 	const router = params.router;
 	const hostMiddleware = params.middleware;
