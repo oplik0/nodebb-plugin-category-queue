@@ -5,7 +5,7 @@
 			Select categories to automatically queue topics from.
 		</p>
 		<div class="row category-defaults">
-			<form role="form" class="canned-responses-defaults">
+			<form role="form" class="category-queue-settings">
 				<!-- BEGIN categories -->
 				<div class="form-group col-sm-4 col-xs-6">
 					<label for="{../cid}">{../name}</label>
