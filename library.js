@@ -3,9 +3,6 @@
 const controllers = require('./lib/controllers');
 
 const plugin = {};
-$.get(config.relative_path + '/category-queue/settings', function(data) {
-	settings = data;
-});
 var cids = ['23'];
 plugin.init = function (params, callback) {
 	const router = params.router;
