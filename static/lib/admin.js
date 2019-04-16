@@ -2,7 +2,7 @@
 
 /* globals $, app, socket, define */
 
-define('admin/plugins/category-queue', ['settings'], function (Settings) {
+define('admin/plugins/category-queue', ['settings', 'category-queue'], function (Settings, categoryQueue) {
 	var ACP = {};
 
 	ACP.init = function () {
