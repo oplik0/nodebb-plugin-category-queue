@@ -3,7 +3,7 @@
 const controllers = require('./lib/controllers');
 
 const plugin = {};
-var cids = ['0', '23'];
+const cids = ['0', '23'];
 plugin.init = function (params, callback) {
 	const router = params.router;
 	const hostMiddleware = params.middleware;
@@ -30,7 +30,7 @@ plugin.addAdminNavigation = function (header, callback) {
 
 plugin.postQueue = function (postData, callback) {
 	if (cids.includes(postData.data.cid)) {
-		postData.shouldQueue = 1;
+		postData.shouldQueue = true;
 	}
 	callback(null, postData);
 };
