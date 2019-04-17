@@ -3,7 +3,7 @@
 const controllers = require('./lib/controllers');
 
 const plugin = {};
-const cids = ['0', '23'];
+const cids = [23, '23'];
 plugin.init = function (params, callback) {
 	const router = params.router;
 	const hostMiddleware = params.middleware;
