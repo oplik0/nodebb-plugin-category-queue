@@ -15,13 +15,13 @@ plugin.init = function (params, callback) {
 	router.get('/admin/plugins/category-queue', hostMiddleware.admin.buildHeader, controllers.renderAdminPage);
 	router.get('/api/admin/plugins/category-queue', controllers.renderAdminPage);
 	meta.settings.get('category-queue', function(err, settings) {
-		if (err) {
-			winston.error('[plugin/category-queue] Could not retrieve plugin settings!');
-			plugin.settings = {
-				cids = []
-			};
-			return;
-		}
+		//if (err) {
+			//winston.error('[plugin/category-queue] Could not retrieve plugin settings!');
+			//plugin.settings = {
+			//	cids = []
+			//};
+			//return;
+		//}
 
 		plugin.settings = settings;
 	});
