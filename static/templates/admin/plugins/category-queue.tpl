@@ -11,7 +11,7 @@
 					<label for="{../cid}">{../name}</label>
 					<select data-cid="{../cid}" id="{../cid}" name="{../cid}" title="{../name}" class="form-control">
 						<option value="">Don't queue</option>
-						<option value="{../cid}>queue</option>
+						<option value="{../cid}">queue</option>
 					</select>
 				</div>
 				<!-- END categories -->

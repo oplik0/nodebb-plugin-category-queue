@@ -1,9 +1,9 @@
 'use strict';
 
 const controllers = require('./lib/controllers');
-
+const winston = require('winston');
 const plugin = {};
-const cids = [23, '23'];
+
 plugin.init = function (params, callback) {
 	const router = params.router;
 	const hostMiddleware = params.middleware;
@@ -14,6 +14,17 @@ plugin.init = function (params, callback) {
 
 	router.get('/admin/plugins/category-queue', hostMiddleware.admin.buildHeader, controllers.renderAdminPage);
 	router.get('/api/admin/plugins/category-queue', controllers.renderAdminPage);
+	meta.settings.get('category-queue', function(err, settings) {
+		if (err) {
+			winston.error('[plugin/category-queue] Could not retrieve plugin settings!');
+			plugin.settings = {
+				cids = []
+			};
+			return;
+		}
+
+		plugin.settings = settings;
+	});
 
 	callback();
 };
@@ -29,7 +40,7 @@ plugin.addAdminNavigation = function (header, callback) {
 };
 
 plugin.postQueue = function (postData, callback) {
-	if (cids.includes(postData.data.cid)) {
+	if (plugin.settings.cids.includes(postData.data.cid)) {
 		postData.shouldQueue = true;
 	}
 	callback(null, postData);
