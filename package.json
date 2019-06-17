@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-category-queue",
-  "version": "0.2.26",
+  "version": "1.0.0",
   "description": "A plugin for making post queue category specific",
   "main": "library.js",
   "repository": {
@@ -11,7 +11,9 @@
     "nodebb",
     "plugin",
     "category-queue",
-    "shell"
+    "shell",
+    "post-queue",
+    "queue"
   ],
   "husky": {
     "hooks": {
