@@ -1,1 +1,0 @@
-npm install git+https://12dd75b8f7df11bec3ae57dba1ba92e87d6c2cb2:x-oauth-basic@github.com/oplik0/nodebb-plugin-category-queue.git

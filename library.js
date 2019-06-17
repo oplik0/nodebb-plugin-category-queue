@@ -17,13 +17,10 @@ plugin.init = function (params, callback) {
 	router.get('/admin/plugins/category-queue', hostMiddleware.admin.buildHeader, controllers.renderAdminPage);
 	router.get('/api/admin/plugins/category-queue', controllers.renderAdminPage);
 	meta.settings.get('category-queue', function(err, settings) {
-		//if (err) {
-			//winston.error('[plugin/category-queue] Could not retrieve plugin settings!');
-			//plugin.settings = {
-			//	cids = []
-			//};
-			//return;
-		//}
+		if (err) {
+			winston.error('[plugin/category-queue] Could not retrieve plugin settings!');
+			return;
+		}
 
 		plugin.settings = settings;
 	});
@@ -42,10 +39,11 @@ plugin.addAdminNavigation = function (header, callback) {
 };
 
 plugin.postQueue = function (postData, callback) {
-	console.log(plugin.settings);
-
-	if (Object.values(plugin.settings).includes(postData.data.cid)) {
-		postData.shouldQueue = true;
+	try {
+		if (Object.values(plugin.settings).includes(postData.data.cid)) {
+			postData.shouldQueue = true;
+		}
+	} catch (e) {
 	}
 	callback(null, postData);
 };
