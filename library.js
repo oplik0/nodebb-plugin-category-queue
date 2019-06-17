@@ -2,6 +2,7 @@
 
 const controllers = require('./lib/controllers');
 const winston = require('winston');
+meta = require.main.require('./src/meta');
 const plugin = {};
 
 plugin.init = function (params, callback) {
