@@ -39,12 +39,8 @@ plugin.addAdminNavigation = function (header, callback) {
 };
 
 plugin.postQueue = function (postData, callback) {
-	try {
-		if (Object.values(plugin.settings).includes(postData.data.cid)) {
-			postData.shouldQueue = true;
-		}
-	} catch (e) {
-	}
+	if (Object.values(plugin.settings).includes(postData.data.cid)) {
+		postData.shouldQueue = true;
 	callback(null, postData);
 };
 
