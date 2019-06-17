@@ -21,9 +21,6 @@
 </div>
 
 <div class="floating-button">
-	<button id="add" class="success mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" data-action="create">
-		<i class="material-icons">note_add</i>
-	</button>
 	<button id="save" class="primary btn-primary mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
 		<i class="material-icons">save</i>
 	</button>
