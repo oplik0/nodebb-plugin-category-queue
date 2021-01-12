@@ -214,6 +214,7 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 
+.vscode
 sftp-config.json
 node_modules/
 "npm command.txt"
