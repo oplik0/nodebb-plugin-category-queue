@@ -32,7 +32,7 @@ plugin.addAdminNavigation = function (header, callback) {
 	header.plugins.push({
 		route: '/plugins/category-queue',
 		icon: 'fa-tint',
-		name: 'category-queue',
+		name: 'Category Queue',
 	});
 
 	callback(null, header);
