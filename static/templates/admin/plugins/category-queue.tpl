@@ -12,7 +12,7 @@
 						<div class="row category-queue-level-{../level}">
 							<div class="form-check d-flex flex-row justify-content-start">
 								<input class="form-check-input me-1" type="checkbox" id="{../cid}-enabled" name="{../cid}-enabled" />
-								<label class="form-label" for="{../cid}-enabled" id="{../cid}-enabled-label"><strong>{../name}</strong></label>
+								<label class="form-label d-inline" for="{../cid}-enabled" id="{../cid}-enabled-label"><strong>{../name}</strong></label>
 								<button class="btn btn-link flex-grow-1 justify-content-end d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{../cid}" aria-expanded="true">
 									<i class="fa-solid fa-chevron-down"></i>
 								</button>
@@ -21,15 +21,15 @@
 								<div class="card card-body">
 									<div>
 										<input type="checkbox" class="form-check-input" id="{../cid}-privileged" name="{../cid}-privileged"/>
-										<label class="form-label" for="{../cid}-privileged" id="{../cid}-privileged-label">[[category-queue:admin.privileged]]</label>
+										<label class="form-label d-inline" for="{../cid}-privileged" id="{../cid}-privileged-label">[[category-queue:admin.privileged]]</label>
 									</div>
 									<div>
 										<input type="checkbox" class="form-check-input" id="{../cid}-exempt" name="{../cid}-exempt" />
-										<label class="form-label" for="{../cid}-exempt" id="{../cid}-exempt-label">[[category-queue:admin.exempt]]</label>
+										<label class="form-label d-inline" for="{../cid}-exempt" id="{../cid}-exempt-label">[[category-queue:admin.exempt]]</label>
 									</div>
 									<div>
 										<input type="checkbox" class="form-check-input" id="{../cid}-no-replies" name="{../cid}-no-replies" />
-										<label class="form-label" for="{../cid}-no-replies" id="{../cid}-no-replies-label">[[category-queue:admin.no-replies]]</label>
+										<label class="form-label d-inline" for="{../cid}-no-replies" id="{../cid}-no-replies-label">[[category-queue:admin.no-replies]]</label>
 									</div>
 								</div>
 							</div>
