@@ -1,0 +1,6 @@
+{
+	"admin.lead": "Wybierz kategorie w których chcesz by wszystkie tematy i posty były dodawane do kolejki moderacji",
+	"admin.privileged": "Pozwój uprzywilijowanym użytkownikom na pomijanie kolejki moderacji",
+	"admin.exempt": "Pozwól grupom wykluczonym z kolejki moderacji na pomijanie kolejki kategorii",
+	"admin.no-replies": "Nie dodawaj odpowiedzi do kolejki moderacji, a jedynie tematy"
+}
