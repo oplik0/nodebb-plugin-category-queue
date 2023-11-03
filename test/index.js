@@ -37,10 +37,10 @@ describe('nodebb-plugin-category-queue', () => {
 	let cid;
 	let tid;
 	before(async () => {
-		[unprivilegedUid, exemptUid, adminUid, group, { cid }, initialSettings] = await Promise.all([
+		[adminUid, unprivilegedUid, exemptUid, group, { cid }, initialSettings] = await Promise.all([
+			user.create({ username: 'category-queue-administrator' }),
 			user.create({ username: 'category-queue-normal-user' }),
 			user.create({ username: 'category-queue-exempt-user' }),
-			user.create({ username: 'category-queue-administrator' }),
 			groups.create({ name: 'Exempt Group' }),
 			categories.create({
 				name: 'Test Category',
