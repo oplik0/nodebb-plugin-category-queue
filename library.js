@@ -63,7 +63,7 @@ async function getCid(data) {
 	return data?.cid ?? await topics.getTopicField(data.tid, 'cid');
 }
 
-function flattenTree(root, level=0) {
+function flattenTree(root, level = 0) {
 	return [
 		{ ...root, level: Math.min(level, plugin.maxCategoryDepth) },
 		...(root.children ?? []).flatMap(child => flattenTree(child, level + 1)),
