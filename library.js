@@ -11,12 +11,13 @@ const groups = require.main.require('./src/groups');
 
 const plugin = {
 	id: 'category-queue',
+	maxCategoryDepth: 12,
 };
 
 plugin.init = async function ({ router }) {
 	routeHelpers.setupAdminPageRoute(router, '/admin/plugins/category-queue', [], async (req, res) => {
 		res.render('admin/plugins/category-queue', {
-			categories: await categories.getAllCategories(0),
+			categories: getFlatTree(await categories.getAllCategories(0)),
 		});
 	});
 
@@ -44,7 +45,7 @@ plugin.addAdminNavigation = async function (header) {
 	header.plugins.push({
 		route: '/plugins/category-queue',
 		icon: 'fa-tint',
-		name: 'category-queue',
+		name: 'Category Queue',
 	});
 	return header;
 };
@@ -60,6 +61,22 @@ plugin.parseSettings = async function (data) {
 
 async function getCid(data) {
 	return data?.cid ?? await topics.getTopicField(data.tid, 'cid');
+}
+
+function flattenTree(root, level=0) {
+	return [
+		{ ...root, level: Math.min(level, plugin.maxCategoryDepth) },
+		...(root.children ?? []).flatMap(child => flattenTree(child, level + 1)),
+	];
+}
+
+function getFlatTree(categoryList) {
+	const tree = categories.getTree(categoryList);
+	const flatTree = [];
+	for (const category of tree) {
+		flatTree.push(...flattenTree(category));
+	}
+	return flatTree;
 }
 
 plugin.postQueue = async function ({ shouldQueue, uid, data }) {

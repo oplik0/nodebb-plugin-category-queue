@@ -36,5 +36,8 @@
 	"settingsRoute": "/admin/plugins/category-queue",
 	"templates": "static/templates",
 	"languages": "static/languages",
-	"defaultLang": "en-GB"
+	"defaultLang": "en-GB",
+	"scss": [
+		"static/style.scss"
+	]
 }
