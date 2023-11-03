@@ -4,8 +4,8 @@
 	"description": "A plugin for making post queue category specific",
 	"main": "library.js",
 	"scripts": {
-		"lint": "eslint . --ext .js --config .eslintrc",
-		"lint:fix": "eslint . --ext .js --fix --config .eslintrc"
+		"lint": "eslint . --ext .js",
+		"lint:fix": "eslint . --ext .js --fix"
 	},
 	"repository": {
 		"type": "git",
