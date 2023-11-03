@@ -1,52 +1,57 @@
 {
-  "name": "nodebb-plugin-category-queue",
-  "version": "1.0.7",
-  "description": "A plugin for making post queue category specific",
-  "main": "library.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/oplik0/nodebb-plugin-category-queue"
-  },
-  "keywords": [
-    "nodebb",
-    "plugin",
-    "category-queue",
-    "shell",
-    "post-queue",
-    "queue"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ]
-  },
-  "author": {
-    "name": "opliko",
-    "email": "opliko.reg+npm@protonmail.com",
-    "url": "https://wieloswiat.pl"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/oplik0/nodebb-plugin-category-queue/issues"
-  },
-  "readmeFilename": "README.md",
-  "nbbpm": {
-    "compatibility": "^1.11.0"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^9.1.1",
-    "@commitlint/config-angular": "^8.3.4",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.15.0",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.0.8"
-  }
+	"name": "nodebb-plugin-category-queue",
+	"version": "2.0.0",
+	"description": "A plugin for making post queue category specific",
+	"main": "library.js",
+	"scripts": {
+		"lint": "eslint . --ext .js --config .eslintrc",
+		"lint:fix": "eslint . --ext .js --fix --config .eslintrc"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/oplik0/nodebb-plugin-category-queue"
+	},
+	"keywords": [
+		"nodebb",
+		"plugin",
+		"category-queue",
+		"post-queue",
+		"queue"
+	],
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"dprint fmt",
+			"eslint --fix",
+			"git add"
+		]
+	},
+	"author": {
+		"name": "opliko",
+		"email": "opliko.reg+npm@protonmail.com",
+		"url": "https://wieloswiat.pl"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/oplik0/nodebb-plugin-category-queue/issues"
+	},
+	"readmeFilename": "README.md",
+	"nbbpm": {
+		"compatibility": "^3.2.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "18.2.0",
+		"@commitlint/config-angular": "18.1.0",
+		"dprint": "^0.42.5",
+		"eslint": "8.52.0",
+		"eslint-config-nodebb": "0.2.1",
+		"eslint-plugin-import": "2.29.0",
+		"husky": "8.0.3",
+		"lint-staged": "15.0.2"
+	}
 }

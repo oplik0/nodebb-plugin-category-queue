@@ -1,27 +1,40 @@
 {
 	"id": "nodebb-plugin-category-queue",
-	"url": "https://github.com/NodeBB/nodebb-plugin-category-queue",
+	"url": "https://github.com/oplik0/nodebb-plugin-category-queue",
 	"library": "./library.js",
 	"hooks": [
 		{
-			"hook": "static:app.load", "method": "init"
+			"hook": "static:app.load",
+			"method": "init"
 		},
 		{
-			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
+			"hook": "filter:admin.header.build",
+			"method": "addAdminNavigation"
 		},
 		{
-			"hook":"filter:post.shouldQueue", "method": "postQueue"
+			"hook": "filter:post.shouldQueue",
+			"method": "postQueue"
+		},
+		{
+			"hook": "action:category.create",
+			"method": "createCategory"
+		},
+		{
+			"hook": "filter:settings.set",
+			"method": "parseSettings"
 		}
-
 	],
 	"staticDirs": {
 		"static": "./static"
 	},
-	"less": [
-		"static/style.less"
+	"modules": {
+		"../admin/plugins/category-queue.js": "./static/lib/admin.js"
+	},
+	"upgrades": [
+		"upgrades/migrate_settings.js"
 	],
-	"acpScripts": [
-		"static/lib/admin.js"
-	],
-	"templates": "static/templates"
+	"settingsRoute": "/admin/plugins/category-queue",
+	"templates": "static/templates",
+	"languages": "static/languages",
+	"defaultLang": "en-GB"
 }

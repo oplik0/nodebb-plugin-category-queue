@@ -1,0 +1,6 @@
+{
+	"admin.lead": "Select categories which you want to always queue topics and posts from",
+	"admin.privileged": "Let privileged users bypass the forced queue",
+	"admin.exempt": "Let users exempt from normal queue bypass also the category queue",
+	"admin.no-replies": "Don't apply the forced queue to replies, only queue new topics"
+}

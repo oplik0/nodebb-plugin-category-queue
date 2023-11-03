@@ -1,27 +1,9 @@
-'use strict';
+import { load, save } from 'settings';
 
-/* globals $, app, socket, define */
+export function init() {
+	load('category-queue', $('.category-queue-settings'));
 
-define('admin/plugins/category-queue', ['settings'], function (Settings) {
-	var ACP = {};
-
-	ACP.init = function () {
-		Settings.load('category-queue', $('.category-queue-settings'));
-
-		$('#save').on('click', function () {
-			Settings.save('category-queue', $('.category-queue-settings'), function () {
-				app.alert({
-					type: 'success',
-					alert_id: 'category-queue-saved',
-					title: 'Settings Saved',
-					message: 'Please reload your NodeBB to apply these settings',
-					clickfn: function () {
-						socket.emit('admin.reload');
-					},
-				});
-			});
-		});
-	};
-
-	return ACP;
-});
+	$('#save').on('click', () => {
+		save('category-queue', $('.category-queue-settings'));
+	});
+}
