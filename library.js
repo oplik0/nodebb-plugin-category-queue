@@ -67,17 +67,17 @@ plugin.postQueue = async function ({ shouldQueue, uid, data }) {
 	try {
 		if (
 			plugin.settings[`${cid}-enabled`] && // general category setting
-			!(
+			!( // allow privileged users to bypass queue if enabled
 				plugin.settings[`${cid}-privileged`] &&
-				await user.isPrivileged(uid) // allow privileged users to bypass queue if enabled
+				await user.isPrivileged(uid)
 			) &&
-			!(
+			!( // allow exempt groups to bypass queue if enabled
 				plugin.settings[`${cid}-exempt`] &&
-				await groups.isMemberOfAny(uid, meta.config.groupsExemptFromPostQueue) // allow exempt groups to bypass queue if enabled
+				await groups.isMemberOfAny(uid, meta.config.groupsExemptFromPostQueue)
 			) &&
-			!(
+			!( // don't queue replies if enabled
 				plugin.settings[`${cid}-no-replies`] &&
-				data.hasOwnProperty('tid') // don't queue replies if enabled
+				data.hasOwnProperty('tid')
 			)
 		) {
 			shouldQueue = true;

@@ -1,5 +1,6 @@
 'use strict';
 
+const meta = require.main.require('./src/meta');
 const plugin = require('../library');
 
 module.exports = {
@@ -7,12 +8,12 @@ module.exports = {
 	timestamp: Date.UTC(2023, 11, 3),
 	method: async function () {
 		const settings = await meta.settings.get(plugin.id);
-        if (Object.keys(settings).some(key => !isNaN(key))) {
-            const new_settings = {};
-            for (const [key, value] of Object.entries(settings)) {
-                new_settings[`${key}-enabled`] = value === key ? 'on' : 'off';
-            }
-            await meta.settings.set(plugin.id, new_settings);
-        }
+		if (Object.keys(settings).some(key => !isNaN(key))) {
+			const new_settings = {};
+			for (const [key, value] of Object.entries(settings)) {
+				new_settings[`${key}-enabled`] = value === key ? 'on' : 'off';
+			}
+			await meta.settings.set(plugin.id, new_settings);
+		}
 	},
 };
