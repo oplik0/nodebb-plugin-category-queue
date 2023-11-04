@@ -49,7 +49,7 @@ describe('nodebb-plugin-category-queue', () => {
 			meta.settings.get('category-queue'),
 		]);
 		initialExemptGroups = meta.config.groupsExemptFromPostQueue;
-		await meta.configs.set('groupsExemptFromPostQueue', [...initialExemptGroups, group.name]);
+		await meta.configs.set('groupsExemptFromPostQueue', [group.name]);
 		await groups.join('administrators', adminUid);
 		await groups.join(group.name, exemptUid);
 		tid = await topics.create({
