@@ -52,9 +52,12 @@ plugin.addAdminNavigation = async function (header) {
 
 plugin.parseSettings = async function (data) {
 	if (data.plugin.includes(plugin.id) && !data.quiet) {
-		plugin.settings = Object.fromEntries(
-			Object.entries(data.settings).map(([key, value]) => [key, value === 'on']),
-		);
+		plugin.settings = {
+			...plugin.settings,
+			...Object.fromEntries(
+				Object.entries(data.settings).map(([key, value]) => [key, value === 'on']),
+			),
+		};
 	}
 	return data;
 };
