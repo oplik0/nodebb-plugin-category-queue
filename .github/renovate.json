@@ -1,6 +1,33 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		"config:base"
-	]
+		"config:base",
+		":label(dependencies)",
+		":semanticCommits",
+		":semanticCommitTypeAll(chore)",
+		":automergeRequireAllStatusChecks",
+		":maintainLockFilesWeekly",
+		":timezone(Europe/Warsaw)",
+		"preview:dockerCompose",
+		"preview:dockerVersions",
+		"docker:enableMajor",
+		"schedule:weekdays"
+	],
+	"assigneesFromCodeOwners": true,
+	"packageRules": [
+		{
+			"matchUpdateTypes": [
+				"minor",
+				"patch",
+				"pin",
+				"digest",
+				"lockFileMaintenance",
+				"bump"
+			],
+			"automerge": true,
+			"automergeType": "branch"
+		}
+	],
+	"rangeStrategy": "auto",
+	"updateLockFiles": true
 }
