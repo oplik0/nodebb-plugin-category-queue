@@ -58,12 +58,12 @@ jobs:
           # Maps port 27017 on service container to the host
           - 27017:27017
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           repository: NodeBB/NodeBB
           ref: ${{ matrix.nodebb }}
           path: nodebb
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           path: tested-plugin
       - name: Prepare NodeBB package.json
