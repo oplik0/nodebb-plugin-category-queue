@@ -69,7 +69,7 @@ jobs:
       - name: Prepare NodeBB package.json
         run: cp install/package.json package.json
         working-directory: nodebb
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
       - name: Install plugin dependencies
