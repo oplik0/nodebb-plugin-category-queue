@@ -178,50 +178,100 @@
   dependencies:
     chalk "^4.1.0"
 
-"@dprint/darwin-arm64@0.50.1":
-  version "0.50.1"
-  resolved "https://registry.yarnpkg.com/@dprint/darwin-arm64/-/darwin-arm64-0.50.1.tgz#08781d68a66a50293af230e63f3d677a8bb66c34"
-  integrity sha512-NNKf3dxXn567pd/hpCVLHLbC0dI7s3YvQnUEwjRTOAQVMp6O7/ME+Tg1RPGsDP1IB+Y2fIYSM4qmG02zQrqjAQ==
+"@dprint/android-arm64@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/android-arm64/-/android-arm64-0.65.0.tgz#066daae80697583f3a72f9d692e57cdd848c2836"
+  integrity sha512-BEE0RLN+yjDZnPHnw/c+QUk6l0YIIoQP/dqbw5WjYWsl0AC5htu/6f9gIYFdtu7H7TzLQhqIQuIq5uRpHEuU3g==
 
-"@dprint/darwin-x64@0.50.1":
-  version "0.50.1"
-  resolved "https://registry.yarnpkg.com/@dprint/darwin-x64/-/darwin-x64-0.50.1.tgz#31892cfcd0c6d15df238e211faa6c50e2ee57cc6"
-  integrity sha512-PcY75U3UC/0CLOxWzE0zZJZ2PxzUM5AX2baYL1ovgDGCfqO1H0hINiyxfx/8ncGgPojWBkLs+zrcFiGnXx7BQg==
+"@dprint/android-x64@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/android-x64/-/android-x64-0.65.0.tgz#b6432d20de852f3521715ccce91a83495021e4db"
+  integrity sha512-oYA0/qqXwY+invZ2+l+7RyzPS3yH96ERh2PL6BWwBMKUSg9IoI/o+O9sgbQRb5UudqGQXq0QBf1uQLRA3u3M9w==
 
-"@dprint/linux-arm64-glibc@0.50.1":
-  version "0.50.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-arm64-glibc/-/linux-arm64-glibc-0.50.1.tgz#d8b41f1752b789a1bb3089c6cd2373f1150257b8"
-  integrity sha512-q0TOGy9FsoSKsEQ4sIMKyFweF5M8rW1S5OfwJDNRR2TU2riWByU9TKYIZUzg53iuwYKRypr/kJ5kdbl516afRQ==
+"@dprint/darwin-arm64@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/darwin-arm64/-/darwin-arm64-0.65.0.tgz#2279834b2b201afdd313b765d58b3ac291cc144f"
+  integrity sha512-bfkOminRCL4/chnj9hsQGyWz4S8h2WS32D1wlO5QCVwZU0SEpoGpo1ih8yDfIY/XL+RWfM5ygCtqdarnQ/nrFA==
 
-"@dprint/linux-arm64-musl@0.50.1":
-  version "0.50.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-arm64-musl/-/linux-arm64-musl-0.50.1.tgz#092b508281c07bfde9514e0b79044a97e482fdab"
-  integrity sha512-XRtxN2cA9rc06WFzzVPDIZYGGLmUXqpVf3F0XhhHV77ikQLJZ5reF4xBOQ+0HjJ/zy8W/HzuGDAHedWyCrRf9g==
+"@dprint/darwin-x64@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/darwin-x64/-/darwin-x64-0.65.0.tgz#a7094fa0c9f56ccddbd84af50bd91b0a9c558522"
+  integrity sha512-9hsmOWv7V69oILyPtK4xHoqKyT3C2QG4pAL2wHis5vPkQ99iGWNiEd8M5EQhObWzSK59ud/6MrwMRpK2IGeMVw==
 
-"@dprint/linux-riscv64-glibc@0.50.1":
-  version "0.50.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-riscv64-glibc/-/linux-riscv64-glibc-0.50.1.tgz#b3e09e1abc6b9bdb30f6791e15f1d98b4a2da0bb"
-  integrity sha512-vAk/eYhSjA3LJ/yuYgxkHamiK8+m6YdqVBO/Ka+i16VxyjQyOdcMKBkrLCIqSxgyXd6b8raf9wM59HJbaIpoOg==
+"@dprint/freebsd-arm64@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/freebsd-arm64/-/freebsd-arm64-0.65.0.tgz#d5d0f64a48aefc54be30d59e3c11f913bc6ee7ce"
+  integrity sha512-2qGBfSn7PgxDJ4BXkp9YBQkzdx2oUdZPljBSxJ+vUYHlJ5nhXDuQwSY6anY1tQbFUOYKJ++7NO/7VPfYDrkrIQ==
 
-"@dprint/linux-x64-glibc@0.50.1":
-  version "0.50.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-x64-glibc/-/linux-x64-glibc-0.50.1.tgz#e8720ba7eddf8d4dca94f02609fa2a207a79f769"
-  integrity sha512-EpW5KLekaq4hXmKBWWtfBgZ244S4C+vFmMOd1YaGi8+f0hmPTJzVWLdIgpO2ZwfPQ5iycaVI/JS514PQmXPOvg==
+"@dprint/freebsd-x64@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/freebsd-x64/-/freebsd-x64-0.65.0.tgz#ff867b6b8d18d6527336163acc49265ddabafc89"
+  integrity sha512-oOD/AZUyBGI5Fu1SWcoTBtk2KrTMzCupOTSN7bzZBQhxwzxufcirrfy0W/IX89S4yU578PvaCdEdgueqs9DGkg==
 
-"@dprint/linux-x64-musl@0.50.1":
-  version "0.50.1"
-  resolved "https://registry.yarnpkg.com/@dprint/linux-x64-musl/-/linux-x64-musl-0.50.1.tgz#f61ad894dbe502a3faff27961006767169a27cc7"
-  integrity sha512-assISBbaKKL8LkjrIy/5tpE157MVW6HbyIKAjTtg3tPNM3lDn1oH3twuGtK9WBsN/VoEP3QMZVauolcUJT/VOg==
+"@dprint/linux-arm64-glibc@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-arm64-glibc/-/linux-arm64-glibc-0.65.0.tgz#e9bdbcee2706f69f3fcdd54d5e4091acebddc471"
+  integrity sha512-veuVnT240iB2Ysy1RcieOKMT4PAKMv8wmUa3qAIm1zDIVSxWRuaYDECLuqGKnM3LhFmK/MDEk3fVth5K4A9OtA==
 
-"@dprint/win32-arm64@0.50.1":
-  version "0.50.1"
-  resolved "https://registry.yarnpkg.com/@dprint/win32-arm64/-/win32-arm64-0.50.1.tgz#3859cb4714c6433160555d2f842423b1a659bc98"
-  integrity sha512-ZeaRMQYoFjrsO3lvI1SqzDWDGH1GGXWmNSeXvcFuAf2OgYQJWMBlLotCKiHNJ3uyYneoyhTg2tv9QkApNkZV4Q==
+"@dprint/linux-arm64-musl@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-arm64-musl/-/linux-arm64-musl-0.65.0.tgz#b64c1b801929e52806994e9cd2b9371a2f5e3360"
+  integrity sha512-FAyIptI7XKv6Fh7GUDJO7vnB7qP+bf6XTr2Gzz0k/hGzD1SN6EhKmi7OHXIf4SeojtVZc6gwSL1jknRbMsrZLQ==
 
-"@dprint/win32-x64@0.50.1":
-  version "0.50.1"
-  resolved "https://registry.yarnpkg.com/@dprint/win32-x64/-/win32-x64-0.50.1.tgz#2569663f691d4e94b6047299fc9045d43433b771"
-  integrity sha512-pMm8l/hRZ9zYylKw/yCaYkSV3btYB9UyMDbWqyxNthkQ1gckWrk17VTI6WjwwQuHD4Iaz5JgAYLS36hlUzWkxA==
+"@dprint/linux-loong64-glibc@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-loong64-glibc/-/linux-loong64-glibc-0.65.0.tgz#27523625953fd9fa61f07215fbe712dc0547a58a"
+  integrity sha512-aVMSJuq2LKfEk8mxLzuWOkj8q+qamednMpmiWtIwJzqAw0zGth0HrTukR7zpyv6LwQxE5A3ezwZTlaSHcmqOWA==
+
+"@dprint/linux-loong64-musl@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-loong64-musl/-/linux-loong64-musl-0.65.0.tgz#1bf469cf382a52b90680545290c64fab94f9c9c0"
+  integrity sha512-ndMc3Ln8Fz8BrZ5Wlmuc9fb+zdAWoPccimMF0rFVPOUUmbipHynWl9l/FFIEQrZfMoyyKcZUtH27RN8ripvi5A==
+
+"@dprint/linux-ppc64-glibc@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-ppc64-glibc/-/linux-ppc64-glibc-0.65.0.tgz#24a6e50ddf9f7e86824df073e94f2cc34948587a"
+  integrity sha512-nZgokeKrkOzDzcZeNEuMu13EXi1dt6rF25+ltHS9o57DLlM0XKdOhf2Iyo3qxFZtBBt+43Zkr7DaT4ljafI/Ow==
+
+"@dprint/linux-ppc64-musl@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-ppc64-musl/-/linux-ppc64-musl-0.65.0.tgz#f2924beda447d45e8359c8b6225dea9700cce23f"
+  integrity sha512-RJIs8iM4xc7XpCgYhh3S5kPsb/KEj91Ea4XFZ4hbndU7hT/+pnGCe8j8H9z9T4hw6WWJEdNwxJpPm9r0IwxluA==
+
+"@dprint/linux-riscv64-glibc@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-riscv64-glibc/-/linux-riscv64-glibc-0.65.0.tgz#150dce1231051cbd8387c40e89473a7abdcc2748"
+  integrity sha512-bSQdJNW91GUeecmUoWeQg7kXWChWxKSZTGCJS9ZwS7/T9yL89H4a7ZxgotBAYOF1bH08nEiySbYeKypXNNVLpQ==
+
+"@dprint/linux-riscv64-musl@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-riscv64-musl/-/linux-riscv64-musl-0.65.0.tgz#40a583047fc47860578d76007e5d39c1f779526c"
+  integrity sha512-NCYhmZQ8qFHhzahGP2bqag98lNlMlfumMUIL1p78TROCcmeDx/jf4xMwp9r92CbG4vxjicaFVCBRJdloKXlgiA==
+
+"@dprint/linux-s390x-glibc@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-s390x-glibc/-/linux-s390x-glibc-0.65.0.tgz#ed583c0d53b6b51ba46007fde88febb4ca68302b"
+  integrity sha512-qlOTzlUacVDzgPAUX/UIw5ZHiDj1Z1i990NzhFdLJiUYg5+NFCmAtMKORB2e/JQZ8I2V3xpHXUgIlCryKe4ngQ==
+
+"@dprint/linux-x64-glibc@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-x64-glibc/-/linux-x64-glibc-0.65.0.tgz#68a560a80a7036f072f166e9634fe0aa33c82175"
+  integrity sha512-edcSFtFrpH/X/j0stOHsPLt4FCDERZ7ov5zKnFUi/kOb7BVt3ffq2aHsLEPmQsVsifZRavM8M3GIcHNzGQvYSw==
+
+"@dprint/linux-x64-musl@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/linux-x64-musl/-/linux-x64-musl-0.65.0.tgz#1a4059aec56422b6bf4e9ce8ab86dec7f9c2fffd"
+  integrity sha512-8KM8bdLsDd2orYtkBvFFGsL0iNMbckPSIJAQvi/k77qz2uX2i6EokGYP2AzUchNBDsEPypURxcICh6IDRzWNgQ==
+
+"@dprint/win32-arm64@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/win32-arm64/-/win32-arm64-0.65.0.tgz#627bd289f46d44ce49f5d1c03c3ff2f9c074b243"
+  integrity sha512-sdJYY9U1je/K10rgfB+T/W4Bza+pHanvvJt+WWFsS2zaphAU3ZqgaJLbboXykR1sr8BoZoXQmP6FhGZP+1qGEg==
+
+"@dprint/win32-x64@0.65.0":
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/@dprint/win32-x64/-/win32-x64-0.65.0.tgz#12b1fdb8036170ce32330900a6547f0ceaa51586"
+  integrity sha512-o7QJa5Idq6VocfyXLsXTuJUZF9OBipDEzCcjqRZQWzb1AdxZigwt6jTZeliyclkfsCuCtYc8678DUVe53uGpGw==
 
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.7.0"
@@ -770,20 +820,30 @@ dot-prop@^5.1.0:
   dependencies:
     is-obj "^2.0.0"
 
-dprint@^0.50.0:
-  version "0.50.1"
-  resolved "https://registry.yarnpkg.com/dprint/-/dprint-0.50.1.tgz#32eac1ee7447f027b17c6fcc0d67f9b700cfeac5"
-  integrity sha512-s+kUyQp2rGpwsM3vVmXySOY3v1NjYyRpKfQZdP4rfNTz6zQuICSO6nqIXNm3YdK1MwNFR/EXSFMuE1YPuulhow==
+dprint@^0.65.0:
+  version "0.65.0"
+  resolved "https://registry.yarnpkg.com/dprint/-/dprint-0.65.0.tgz#27fba4a4c160f785daa038fbe420f751ad18e44f"
+  integrity sha512-K7z0wMfGYAQejZ7T4iOMlEaqLtCKnueJsZ4HVjBP9VCik/zS2opp2qxO4lU1zJDhPsyfm3vSoZwulvSDGV0RVw==
   optionalDependencies:
-    "@dprint/darwin-arm64" "0.50.1"
-    "@dprint/darwin-x64" "0.50.1"
-    "@dprint/linux-arm64-glibc" "0.50.1"
-    "@dprint/linux-arm64-musl" "0.50.1"
-    "@dprint/linux-riscv64-glibc" "0.50.1"
-    "@dprint/linux-x64-glibc" "0.50.1"
-    "@dprint/linux-x64-musl" "0.50.1"
-    "@dprint/win32-arm64" "0.50.1"
-    "@dprint/win32-x64" "0.50.1"
+    "@dprint/android-arm64" "0.65.0"
+    "@dprint/android-x64" "0.65.0"
+    "@dprint/darwin-arm64" "0.65.0"
+    "@dprint/darwin-x64" "0.65.0"
+    "@dprint/freebsd-arm64" "0.65.0"
+    "@dprint/freebsd-x64" "0.65.0"
+    "@dprint/linux-arm64-glibc" "0.65.0"
+    "@dprint/linux-arm64-musl" "0.65.0"
+    "@dprint/linux-loong64-glibc" "0.65.0"
+    "@dprint/linux-loong64-musl" "0.65.0"
+    "@dprint/linux-ppc64-glibc" "0.65.0"
+    "@dprint/linux-ppc64-musl" "0.65.0"
+    "@dprint/linux-riscv64-glibc" "0.65.0"
+    "@dprint/linux-riscv64-musl" "0.65.0"
+    "@dprint/linux-s390x-glibc" "0.65.0"
+    "@dprint/linux-x64-glibc" "0.65.0"
+    "@dprint/linux-x64-musl" "0.65.0"
+    "@dprint/win32-arm64" "0.65.0"
+    "@dprint/win32-x64" "0.65.0"
 
 dunder-proto@^1.0.0, dunder-proto@^1.0.1:
   version "1.0.1"
